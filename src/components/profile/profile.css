@@ -27,12 +27,6 @@
 .navsidebaropt>a>i{
     margin-right: 25px;
 }
-.navsidebaropt2{
-    padding: 10px 5px;
-}
-.navsidebaropt2>a>i{
-    margin-right: 15px;
-}
 
 .sidebaropt{
     font-size: 18px;
@@ -43,29 +37,30 @@
     padding-right: 45px;
    
 }
-.sidebaropt2{
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    padding-top: 10px ;
-    padding-bottom: 10px ;
-    padding-right: 20px;
-}
 .navsidebaropt:hover{
     
     background-color: #f5ac82;
+}
+.maincontent{
+    margin: 35px auto;
 
 }
-.statbox{
+.profilepiccontain{
     display: flex;
-    
+   
 }
-.statbox>div{
-    margin: 15px;
+
+.usernamediv{
+    color: #a11afe;
+   font-size: 19px;
+   font-weight: 600;
+  margin-left: 20px;
+  margin-top: 50px;
+
 }
-.stats{
-    display: flex;
-}
+
+
+/* admin */
 #sidebar2{
     width: 240px;
     height: 500px;
@@ -74,6 +69,29 @@
     margin-left: 15px;
     border: none;
     border-radius: 15px;
+
+}
+.navsidebaropt2{
+    padding: 10px 5px;
+    margin-top: 20px;
+}
+.navsidebaropt2>a>i{
+    margin-right: 15px;
+}
+
+
+.sidebaropt2{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    padding-right: 20px;
+   
+}
+.navsidebaropt2:hover{
+    
+    background-color: #f5ac82;
 
 }
 

@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import OrderItem from './OrderItem'
-import Modal from 'react-modal'; 
-import Login from '../signuplogin/Login'
+import './cart.css'
+import { useNavigate } from "react-router-dom";
+
 
 
 const Checkout = () => {
@@ -73,7 +74,10 @@ const Checkout = () => {
       });
   };
 
-  
+  const navigate = useNavigate();
+  const navigatecart = () => {
+		navigate("/cart");
+	};
 
   return (
     <div className='container'>
@@ -100,7 +104,21 @@ const Checkout = () => {
               </div>
             </div>
           </div>
+          <button
+							type='button'
+							className='px-6 py-2 border rounded-md mt-3 '
+							style={{
+								backgroundColor: "#f5ac82",
+								color: "white",
+								fontSize: "18px",
+							}}
+             onClick={navigatecart}
+							>
+							Back to Shop
+						</button>
         </div>
+
+
         <div className='col-md-4 mt-2'>
           <div className='card'>
             <div className='card-body'>
@@ -118,7 +136,7 @@ const Checkout = () => {
                   <label htmlFor='email' className='form-label'>Email</label>
                   <input type='email' id='email' className='form-control' value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
-                <button type="button" className='btn ' onClick={handlePlaceOrder}>Place Order</button>
+                <button type="button" className='checkoutbtn ' onClick={handlePlaceOrder}>Place Order</button>
               </form>
             </div>
           </div>

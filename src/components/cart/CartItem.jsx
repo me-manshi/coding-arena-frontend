@@ -30,11 +30,11 @@ export default function CartItem({ course, removeFromCart }) {
                   </h3>
 
                   <div class="flex items-center space-x-1">
-                    <i class="fa-regular fa-star" style={{color:'gray',cursor:'pointer'}}></i>
-                    <i class="fa-regular fa-star" style={{color:'gray',cursor:'pointer'}}></i>
-                    <i class="fa-regular fa-star" style={{color:'gray',cursor:'pointer'}}></i>
-                    <i class="fa-regular fa-star" style={{color:'gray',cursor:'pointer'}}></i>
-                    <i class="fa-regular fa-star" style={{color:'gray',cursor:'pointer'}}></i>
+                    <i class="fa-solid fa-star" style={{color:'gray',cursor:'pointer'}}></i>
+                    <i class="fa-solid fa-star" style={{color:'gray',cursor:'pointer'}}></i>
+                    <i class="fa-solid fa-star" style={{color:'gray',cursor:'pointer'}}></i>
+                    <i class="fa-solid fa-star" style={{color:'gray',cursor:'pointer'}}></i>
+                    <i class="fa-solid fa-star" style={{color:'gray',cursor:'pointer'}}></i>
                   </div>
                 </div>
                 <div className="text-right" style={{marginTop:'10px'}}>

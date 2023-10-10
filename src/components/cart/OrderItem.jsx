@@ -13,7 +13,7 @@ export default function OrderItem({course}) {
               <div className="flex w-full space-x-2 sm:space-x-4">
                 <img
                   style={{width:'100px',height:'100px',}}
-                  src={course.image}
+                  src="./images/dev.webp"
                  
                 />
                 <div className="flex flex-col justify-between w-full pb-4">

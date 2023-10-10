@@ -6,22 +6,16 @@ import "./header.css";
 import { Link } from "react-router-dom";
 
 
-
-
 function Header() {
 
- 
 
-
-
-  
-  
   return (
     <header className="shadow ">
+      <Link to="/">
       <div className="logo">
         <img src="./images/logo3.png" alt="" />
         <div className="logoname">CODING ARENA</div>
-      </div>
+      </div></Link>
       
       <nav>
         <ul className="menu">
@@ -50,6 +44,7 @@ function Header() {
       
       </div>
       <div >
+      
       <Link to="/profile"><img className="headerprofile" src="./images/profile.webp" alt="" />
             </Link>
       </div>

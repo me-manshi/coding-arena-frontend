@@ -5,19 +5,23 @@ import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
+
 export default function Login() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+
+  
   //to navigate to profle after login
   const navigate = useNavigate();
+  
 
     //popup
     const showMessage = (text, isError = false) => {
    
         toast.info(text, {
-          autoClose: 6000, // Auto-close the notification after 5 seconds
+          autoClose: 3500, 
           className: isError ? "toast-error" : "toast-success", 
         });
         // Log the message to the console
@@ -36,11 +40,12 @@ export default function Login() {
          if (admin) {
           // If the user is an admin, display a message and allow course upload
           showMessage("Logged in as admin. You can now upload courses.");
+          
         } else {
           // If the user is not an admin, display a regular login success message
           showMessage("Login successful!");
+          
         }
-
         // Reset the input fields to empty strings
         setFormData({
           email: "",
@@ -48,6 +53,7 @@ export default function Login() {
         });
          // Log the JWT token to the console
       console.log("JWT Token:", token);
+
       } else {
         // Display an error toast
         showMessage(error);
@@ -56,6 +62,7 @@ export default function Login() {
       // Handle network or other errors
       console.error(error);
     }
+    
   };
 
   return (
