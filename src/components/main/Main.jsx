@@ -9,7 +9,6 @@ import "react-toastify/dist/ReactToastify.css";
 import CourseSlider from "./CourseSlider";
 
 
-
 function Main() {
 
   const navigate = useNavigate();

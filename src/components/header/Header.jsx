@@ -17,7 +17,8 @@ function Header() {
         <div className="logoname">CODING ARENA</div>
       </div></Link>
       
-      <nav>
+      <nav className="navbar">
+        
         <ul className="menu">
           <li className="menu-item">
             <Link to="/">HOME</Link>

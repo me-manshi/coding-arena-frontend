@@ -127,4 +127,13 @@
     width: 200px;
     height: 50px;
   }
+  .hero {
+    display: block;
+
+  }
+  .hero-image {
+    flex: 1;
+    padding-bottom: 20px;
+    opacity: 0;
+  }
 }
